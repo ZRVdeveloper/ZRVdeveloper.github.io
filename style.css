@@ -1,9 +1,32 @@
 *{
-    --lead-bg-color:#b63535;
+    --lead-bg-color:#ffffff;
+    --lead-font-color:#8ebe41;
+    --second-font-color:#4bb979;
+
     --lead-font: "Arial";
     font-style: var(--lead-font);
 }
+html {
+    background-color: var(--lead-bg-color);
+    background-image: url('https://uploads.sitepoint.com/wp-content/uploads/2017/03/149017647720151104_141937.gif');
+    background-size: 20%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+wrapper{
+    height: 100vh;
+    display: block;
+}
 h1 {
     text-align: center;
-    color: var(--lead-bg-color);
+    color: var(--lead-font-color);
+}
+h3{
+    text-align: center;
+    color: var(--second-font-color);
+}
+img {
+    text-align: center;
+    align-items: center;
 }
