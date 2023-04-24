@@ -3,3 +3,6 @@
     --lead-font: "Arial";
     font-style: var(--lead-font);
 }
+h1 {
+    text-align: center;
+}
