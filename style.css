@@ -1,3 +1,5 @@
 *{
     --lead-bg-color:#333;
+    --lead-font: "Arial";
+    font-style: var(--lead-font);
 }
