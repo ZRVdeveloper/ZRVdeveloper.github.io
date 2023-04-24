@@ -1,8 +1,9 @@
 *{
-    --lead-bg-color:#333;
+    --lead-bg-color:#b63535;
     --lead-font: "Arial";
     font-style: var(--lead-font);
 }
 h1 {
     text-align: center;
+    color: var(--lead-bg-color);
 }
