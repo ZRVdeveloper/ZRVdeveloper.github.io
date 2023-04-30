@@ -5,18 +5,22 @@
 
     --lead-font: "Arial";
     font-style: var(--lead-font);
+    padding: 0px;
+    margin: 0px;
 }
 html {
     background-color: var(--lead-bg-color);
+    
+    
+}
+wrapper{
+    height: 100vh;
+    display: block;
     background-image: url('https://uploads.sitepoint.com/wp-content/uploads/2017/03/149017647720151104_141937.gif');
     background-size: 20%;
     background-position: 50%;
     background-repeat: no-repeat;
     width: 100%;
-}
-wrapper{
-    height: 100vh;
-    display: block;
 }
 h1 {
     text-align: center;
