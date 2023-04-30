@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 *{
     --lead-bg-color:#ffffff;
     --lead-font-color:#8ebe41;
     --second-font-color:#4bb979;
-
-    --lead-font: "Arial";
-    font-style: var(--lead-font);
+    --lead-font: "Comfortaa", cursive;   
+    font-family: var(--lead-font);
     padding: 0px;
     margin: 0px;
+
 }
 html {
     background-color: var(--lead-bg-color);
+     
+    font-style: var(--lead-font);
+    
     
     
 }
@@ -49,10 +54,15 @@ nav{
     backdrop-filter: blur(15px);
     border-bottom: 2px solid #000;
     border-radius: 30px;
+    z-index: 99;
 }
 nav a{
     padding: 10px;
     font-size: 1.3em;
-    text-decoration: none;    
-
+    text-decoration: none;  
+    color: #333;
+    font-weight: 600;
+}
+nav a:hover{    
+    color: #999;
 }

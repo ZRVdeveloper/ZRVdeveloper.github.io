@@ -9,7 +9,7 @@ section:nth-child(3)  {
     background: url('img/sec1bg.webp') no-repeat;
     background-position: center;
     background-size: cover;
-    font-family: 'poppins', sans-serif;
+    font-family: 'poppins', sans-serif !important;
 
 }
 .forms-box{
