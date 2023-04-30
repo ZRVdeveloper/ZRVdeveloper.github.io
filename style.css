@@ -21,14 +21,12 @@ wrapper{
     background-position: 50%;
     background-repeat: no-repeat;
     width: 100%;
+    padding-top: 10vh;
 }
-<<<<<<< HEAD
-=======
 main{
     height: 100vh;
     display: block;
 }
->>>>>>> 4ae2edfbadd207e226cfd29cdc62757acafdeb50
 h1 {
     text-align: center;
     color: var(--lead-font-color);
@@ -40,4 +38,21 @@ h3{
 img {
     text-align: center;
     align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    background-color: rgba(#333, 0.5);
+    backdrop-filter: blur(15px);
+    border-bottom: 2px solid #000;
+    border-radius: 30px;
+}
+nav a{
+    padding: 10px;
+    font-size: 1.3em;
+    text-decoration: none;    
+
 }
