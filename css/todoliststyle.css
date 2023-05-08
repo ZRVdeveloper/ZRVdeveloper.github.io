@@ -98,3 +98,4 @@ section#todolist .remove{
 	font-family: 'Hind', sans-serif;
 	cursor: pointer;
 }
+section#todolist button{font-size: 32px}
