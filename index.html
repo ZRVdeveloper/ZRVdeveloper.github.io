@@ -6,13 +6,15 @@
 	<title>Please, wait!</title>
 	<link rel="stylesheet" href="css/style.css">	
 	<link rel="stylesheet" href="css/section1_login_form.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 </head>
 <body>
 <header>
 <nav>
-<a href="#login-form">login form</a>
-<a href="">2</a>
+<a data-go="login-form" onclick="goToElement(dataset.go)">login form</a>
+<a data-go="todolist" onclick="goToElement(dataset.go)">todolist</a>
 <a href="">3</a>
 <a href="">4</a>
 
@@ -24,8 +26,7 @@
 		<h1>Just zrv developer place</h1>
 		<h3>My work</h3> 
 	</wrapper>
-	<a name="login-form"></a>
-	<section id="form">
+	<section id="login-form" class="animate__animated">
 		<div class="forms-box">			
 			<div class="forms-value">
 				<form action="">
@@ -59,7 +60,7 @@
 		
 	
 	</section>
-	<section id="todolist">
+	<section id="todolist" class="animate__animated">
 		<link rel="stylesheet" href="css/todoliststyle.css">
 		<h3><span class="title">Todo</span>List</h3>
     		<div class="inputDiv">
@@ -96,5 +97,28 @@
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+
+function del_anim(f){
+	
+	
+}
+
+function goToElement(way){
+	
+	anim_db = ['animate__bounce','animate__bounceInDown','animate__bounceInLeft', 'animate__rubberBand', 'animate__shakeX', 'animate__shakeY', 'animate__tada', 'animate__wobble', 'animate__jello', 'animate__heartBeat']
+	var random = Math.floor(Math.random() * anim_db.length);
+	var element = document.getElementById(way);
+	element.scrollIntoView({behavior: "smooth"} );
+	element.classList.add(anim_db[random]); 
+	setTimeout(() => element.classList.remove(anim_db[random]), 1500);
+
+}
+var a_form = document.getElementById("form")
+//a_form.addEventListener("click", () => goToElement(a_form.dataset.go))
+
+var a_list = document.getElementById("list")
+//a_list.addEventListener("click", () => goToElement(a_list.dataset.go))
+</script>
 </body>
 </html>
