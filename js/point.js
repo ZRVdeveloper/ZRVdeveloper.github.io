@@ -69,7 +69,7 @@ function allowDrop(event) {
   const e = document.getElementById(point_name);
   console.log(event.x, event.y, e.id, event.x + "px");  
   e.style.left = event.x-25 + "px";
-  e.style.top = event.y-25 + "px";
+  e.style.top = event.y-100 + "px";
 }
 
 
