@@ -8,7 +8,7 @@
 }
 #plusNewPoint {
     position: absolute;
-    bottom: 50px;
+    /*bottom: 50px;*/
     right: 50px;
     border:solid 1px rgb(85, 214, 182) ;
     border-radius: 50%;
